@@ -1,19 +1,21 @@
 .buttons__btn {
     background-color: #575753;
-    color: white;
+    color: #F3F3F3;
     width: 200px;
     height: 50px;
     font-size: 17px;
-    margin: 0 1px 0 1px;
+    margin: 0 2px 0 2px;
     outline: none;
-    border-radius: 4px;
-    border-color: #d6d6d6;
+    border-color: rgba(155, 155, 155, 1); 
     border-width: 1px;
-    box-shadow: 3px 2px 22px 1px rgba(22, 13, 48, 0.24);
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 2px rgb(80, 69, 128);
 }
 
 .buttons__btn:active {
-    background-color: #00DCE7;
-    transition-duration: 0.2s;
-    border-color: #60a9ee;
+    background: #00DCE7;
+    transition-duration: 0.04s;
+    outline: 1px solid #7F9DC6;
+    outline-offset: 1px;
+    box-shadow: 1px 0px 2px 1px #89A1AB;
 }

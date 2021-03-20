@@ -9,11 +9,11 @@ class Output extends React.Component {
 
     interpretCount(count) {
         if (count % 15 === 0 && count != 0) {
-            return "FIZZBUZZ";
+            return "FizzBuzz";
         } else if (count % 3 === 0 && count != 0) {
-            return "FIZZ";
+            return "Fizz";
         } else if (count % 5 === 0 && count != 0) {
-            return "BUZZ";
+            return "Buzz";
         } else {
             return count;
         }
