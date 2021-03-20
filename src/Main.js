@@ -1,14 +1,12 @@
 import React from 'react';
-import "./Main.css";
+import Buttons from './Buttons.js';
+import './Main.css';
 
 function Main() {
     return (
         <div class="main">
             <div class="main__wrapper">
-                <div>
-                    +
-                    -
-                </div>
+                <Buttons />
                 <div>
                     OUTPUT
                 </div>

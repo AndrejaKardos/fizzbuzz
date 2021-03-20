@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(47, 25, 92);
-    background-image: linear-gradient(rgb(47, 25, 92),rgb(34, 57, 118));
+    background-image: linear-gradient(rgb(34, 57, 118), rgb(47, 25, 92));
     width: 100vw;
     height: 100vh;
 }
