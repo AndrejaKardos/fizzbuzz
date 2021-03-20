@@ -1,5 +1,6 @@
 import React from 'react';
 import Buttons from './Buttons.js';
+import Output from './Output.js';
 import './Main.css';
 
 function Main() {
@@ -7,9 +8,7 @@ function Main() {
         <div class="main">
             <div class="main__wrapper">
                 <Buttons />
-                <div>
-                    OUTPUT
-                </div>
+                <Output />
             </div>
         </div>
     );
