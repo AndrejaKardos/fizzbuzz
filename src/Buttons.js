@@ -29,7 +29,7 @@ class Buttons extends React.Component {
 
     render() {
         return (
-            <div class="buttons">
+            <div className="buttons">
                 <button className="buttons__btn" id="buttons__increase" onClick={this.increaseCount}>+</button>
                 <button className="buttons__btn" id="buttons__decrease" onClick={this.decreaseCount}>-</button>
             </div>
