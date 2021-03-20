@@ -9,13 +9,23 @@ class Main extends React.Component {
         this.state = {
             count: 0
         };
+        this.newCount = this.newCount.bind(this);
+    }
+
+    newCount(countInfo) {
+        this.setState({
+            count: countInfo
+        })
     }
 
     render() {
         return (
-            <div class="main">
-                <div class="main__wrapper">
-                    <Buttons count={this.state.count} />
+            <div className="main">
+                <div className="main__wrapper">
+                    <Buttons 
+                        count={this.state.count} 
+                        newCount={this.newCount}
+                    />
                     <Output count={this.state.count} />
                 </div>
             </div>

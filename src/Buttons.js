@@ -6,21 +6,32 @@ class Buttons extends React.Component {
         super(props);
         this.increaseCount = this.increaseCount.bind(this);
         this.decreaseCount = this.decreaseCount.bind(this);
+        this.changeCount = this.changeCount.bind(this);
     }
 
     increaseCount() {
-        console.log(this.props.count + 1);
+        let increasedNum = this.props.count + 1;
+        if (increasedNum <= 100) {
+            this.changeCount(increasedNum);
+        }
     }
 
     decreaseCount() {
-        console.log(this.props.count - 1);
+        let decreasedNum = this.props.count - 1;
+        if (decreasedNum >= 0) {
+            this.changeCount(decreasedNum);
+        }
+    }
+
+    changeCount(countInfo) {
+        this.props.newCount(countInfo);
     }
 
     render() {
         return (
             <div class="buttons">
-                <button class="buttons__btn" onClick={this.increaseCount}>+</button>
-                <button class="buttons__btn" onClick={this.decreaseCount}>-</button>
+                <button className="buttons__btn" id="buttons__increase" onClick={this.increaseCount}>+</button>
+                <button className="buttons__btn" id="buttons__decrease" onClick={this.decreaseCount}>-</button>
             </div>
         );
     }
