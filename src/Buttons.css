@@ -1,0 +1,10 @@
+.buttons__btn {
+    background-color: #575753;
+    color: white;
+    width: 200px;
+    height: 55px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 4px;
+    margin: 0 1px 0 1px;
+}

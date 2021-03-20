@@ -4,8 +4,8 @@ import './Buttons.css'
 function Buttons() {
     return (
         <div class="buttons">
-            <button class="button">+</button>
-            <button class="button">-</button>
+            <button class="buttons__btn">+</button>
+            <button class="buttons__btn">-</button>
         </div>
     );
 }
