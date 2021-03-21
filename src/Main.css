@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Montserrat:wght@300&display=swap');
+
 .main {
     display: flex; 
     flex-direction: column;
@@ -7,6 +9,7 @@
     background-image: linear-gradient(rgb(117, 137, 192), rgb(47, 25, 92));
     width: 100vw;
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hide-message {
