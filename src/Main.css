@@ -13,8 +13,17 @@
 }
 
 .main__header {
+    position: relative;
+    bottom: 150px;
+    color: #34303f;
     font-family: 'Coiny', cursive, 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px #00dbe7bb;
+}
+
+.main__wrapper {
+    border: 1px solid rgb(0, 0, 0);
+    height: 200px;
 }
 
 .hide-message {
