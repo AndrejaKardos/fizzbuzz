@@ -21,6 +21,10 @@ class Main extends React.Component {
 
     displayMessage() {
         document.getElementById("main__message").classList.remove("hide-message");
+        setTimeout(function () {
+            document.getElementById("main__message").classList.add("hide-message");
+        }, 3000);
+
     }
 
     render() {

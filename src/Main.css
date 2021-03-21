@@ -11,18 +11,4 @@
 
 .hide-message {
     visibility: hidden;
-    -moz-animation-name: showEffect;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-in;
-    -moz-animation-duration: 2.3s;
-
-    -webkit-animation-name: showEffect;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: 2.3s;
-
-    animation-name: showEffect;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2.3s;
 }
