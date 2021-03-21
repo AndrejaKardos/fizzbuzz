@@ -10,12 +10,17 @@ class Main extends React.Component {
             count: 0
         };
         this.newCount = this.newCount.bind(this);
+        this.displayMessage = this.displayMessage.bind(this);
     }
 
     newCount(countInfo) {
         this.setState({
             count: countInfo
         })
+    }
+
+    displayMessage() {
+        document.getElementById("main__message").classList.remove("hide-message");
     }
 
     render() {
@@ -25,9 +30,11 @@ class Main extends React.Component {
                     <Buttons 
                         count={this.state.count} 
                         newCount={this.newCount}
+                        message={this.displayMessage}
                     />
                     <Output count={this.state.count} />
                 </div>
+                <div id="main__message" className="hide-message">Output can't be less than 0 or more than 100!</div>
             </div>
         );
     }
