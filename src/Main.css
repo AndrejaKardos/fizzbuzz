@@ -12,6 +12,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.main__header {
+    font-family: 'Coiny', cursive, 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
 .hide-message {
     visibility: hidden;
 }
