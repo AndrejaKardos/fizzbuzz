@@ -9,7 +9,7 @@
     border-color: rgba(155, 155, 155, 1); 
     border-width: 1px;
     border-radius: 4px;
-    box-shadow: 1px 1px 5px 2px rgb(80, 69, 128);
+    box-shadow: 1px 1px 5px 2px rgb(130, 130, 130);
 }
 
 .buttons__btn:active {
