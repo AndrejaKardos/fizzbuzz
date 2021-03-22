@@ -1,8 +1,9 @@
 import { interpretCount } from './Output'
 
+
 // OUTPUT COMPONENT TESTS
 
-test('Check if multiples of 3 (not divisible by 5) return Fizz', () => {
+test('multiples of 3 (not divisible by 5) return Fizz', () => {
     // we make an array with values that are multiples of 3
     // running from 3 to 99 inclusively
 
@@ -16,18 +17,18 @@ test('Check if multiples of 3 (not divisible by 5) return Fizz', () => {
     // we will use our interpretCount function on the array
     // while checking whether any value doesn't equal "Fizz"
 
-    let value = true;
+    let containsOnlyFizz = true;
 
     for (let j = 0; j < multiplesOfThree.length; j++) {
         if(interpretCount(multiplesOfThree[j]) !== "Fizz") {
-            value = false;
+            containsOnlyFizz = false;
         } 
     }
     
-    expect(value).toBe(true);
+    expect(containsOnlyFizz).toBe(true);
 });
 
-test('Check if multiples of 5 (not divisible by 3) return Buzz', () => {
+test('multiples of 5 (not divisible by 3) return Buzz', () => {
     const multiplesOfFive = [];
     for (let i = 1; i <= 20; i++) {
         if(i*5 % 3 !== 0) {
@@ -35,30 +36,30 @@ test('Check if multiples of 5 (not divisible by 3) return Buzz', () => {
         }
     }
 
-    let value = true;
+    let containsOnlyBuzz = true;
 
     for (let j = 0; j < multiplesOfFive.length; j++) {
         if(interpretCount(multiplesOfFive[j]) !== "Buzz") {
-            value = false;
+            containsOnlyBuzz = false;
         } 
     }
     
-    expect(value).toBe(true);
+    expect(containsOnlyBuzz).toBe(true);
 });
 
-test('Check if multiples of 15 return FizzBuzz', () => {
+test('multiples of 15 return FizzBuzz', () => {
     const multiplesOfFifteen = [];
     for (let i = 1; i <= 6; i++) {
         multiplesOfFifteen.push(i*15);
     }
 
-    let value = true;
+    let containsOnlyFizzBuzz = true;
 
     for (let j = 0; j < multiplesOfFifteen.length; j++) {
         if(interpretCount(multiplesOfFifteen[j]) !== "FizzBuzz") {
-            value = false;
+            containsOnlyFizzBuzz = false;
         } 
     }
     
-    expect(value).toBe(true);
+    expect(containsOnlyFizzBuzz).toBe(true);
 });

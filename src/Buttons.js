@@ -1,22 +1,21 @@
 import React from 'react';
 import './Buttons.css'
 
+export function increaseCount() {
+    let increasedNum = this.props.count + 1;
+    if (increasedNum <= 100) {
+        this.changeCount(increasedNum);
+    } else if (increasedNum > 100) {
+        this.message();
+    }
+}
+
 class Buttons extends React.Component {
     constructor(props) {
         super(props);
-        this.increaseCount = this.increaseCount.bind(this);
         this.decreaseCount = this.decreaseCount.bind(this);
         this.changeCount = this.changeCount.bind(this);
         this.message = this.message.bind(this);
-    }
-
-    increaseCount() {
-        let increasedNum = this.props.count + 1;
-        if (increasedNum <= 100) {
-            this.changeCount(increasedNum);
-        } else if (increasedNum > 100) {
-            this.message();
-        }
     }
 
     decreaseCount() {
@@ -39,7 +38,7 @@ class Buttons extends React.Component {
     render() {
         return (
             <div className="buttons">
-                <button className="buttons__btn" id="buttons__increase" onClick={this.increaseCount}>+</button>
+                <button className="buttons__btn" id="buttons__increase" onClick={increaseCount}>+</button>
                 <button className="buttons__btn" id="buttons__decrease" onClick={this.decreaseCount}>-</button>
             </div>
         );
