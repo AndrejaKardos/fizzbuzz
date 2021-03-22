@@ -45,3 +45,20 @@ test('Check if multiples of 5 (not divisible by 3) return Buzz', () => {
     
     expect(value).toBe(true);
 });
+
+test('Check if multiples of 15 return FizzBuzz', () => {
+    const multiplesOfFifteen = [];
+    for (let i = 1; i <= 6; i++) {
+        multiplesOfFifteen.push(i*15);
+    }
+
+    let value = true;
+
+    for (let j = 0; j < multiplesOfFifteen.length; j++) {
+        if(interpretCount(multiplesOfFifteen[j]) !== "FizzBuzz") {
+            value = false;
+        } 
+    }
+    
+    expect(value).toBe(true);
+});
