@@ -63,3 +63,24 @@ test('multiples of 15 return FizzBuzz', () => {
     
     expect(containsOnlyFizzBuzz).toBe(true);
 });
+
+test('values not divisible by 3 or 5 return themselves', () => {
+    const otherNumbers = [];
+    for (let i = 0; i <= 100; i++) {
+        if(i % 3 !== 0 && i % 5 !== 0) {
+            otherNumbers.push(i);
+        }
+    }
+
+    let containsOnlyNums = true;
+
+    for (let j = 0; j < otherNumbers.length; j++) {
+        // all numbers are divisible by 1, whereas strings are not
+        // so we use this logic to check if there are any strings in the array
+        if (interpretCount(otherNumbers[j]) !== otherNumbers[j]) {
+            containsOnlyNums = false;
+        } 
+    }
+    
+    expect(containsOnlyNums).toBe(true);
+});
