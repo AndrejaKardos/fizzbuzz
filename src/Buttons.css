@@ -1,7 +1,16 @@
+.buttons {
+    margin-top: 40px;
+    display: flex; 
+    justify-content: center;
+    width: 90%;
+}
+
 .buttons__btn {
+    flex: 1 1 auto;
     background-color: #575753;
     color: #F3F3F3;
-    width: 200px;
+    max-width: 200px;
+    min-width: 100px;
     height: 50px;
     font-size: 17px;
     margin: 0 2px 0 2px;
@@ -18,8 +27,4 @@
     outline: 1px solid #7F9DC6;
     outline-offset: 1px;
     box-shadow: 1px 0px 2px 1px #89A1AB;
-}
-
-.buttons {
-    margin-top: 40px;
 }

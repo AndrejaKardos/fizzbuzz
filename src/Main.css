@@ -41,7 +41,7 @@
     justify-content: space-around;
     align-items: center;
     height: 250px;
-    width: 500px;
+    width: 100%;
 }
 
 .hide-message {
