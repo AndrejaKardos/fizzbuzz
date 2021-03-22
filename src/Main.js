@@ -41,6 +41,8 @@ class Main extends React.Component {
                     <Output count={this.state.count} />
                 </div>
                 <div id="main__message" className="hide-message">Output can't be less than 0 or more than 100!</div>
+                <div className="main__info-question">What is FizzBuzz?</div>
+                <div className="main__info-answer">FizzBuzz is a group word game for children to teach them about division. Players take turns to count incrementally, replacing any number divisible by 3 with the word "Fizz", any number divisible by 5 with the word "Buzz", and any numbers divisible by 15 with "FizzBuzz".</div>
             </div>
         );
     }
