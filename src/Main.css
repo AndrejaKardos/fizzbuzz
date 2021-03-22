@@ -51,6 +51,7 @@
 #main__message {
     position: relative;
     z-index: 9999;
+    bottom: 200px;
     color: rgb(169, 1, 1);
     font-style: italic;
 }
