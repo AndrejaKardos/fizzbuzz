@@ -30,9 +30,9 @@ class Main extends React.Component {
     render() {
         return (
             <div className="main">
-                <div class="main__header">FizzBuzz</div>
+                <div className="main__quarter-circle"></div>
+                <div className="main__header">FizzBuzz</div>
                 <div className="main__wrapper">
-                    
                     <Buttons 
                         count={this.state.count} 
                         newCount={this.newCount}
