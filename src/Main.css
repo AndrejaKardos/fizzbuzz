@@ -74,7 +74,8 @@
     position: relative;
     z-index: 9999;
     top: 120px;
-    width: 550px;
+    max-width: 550px;
+    width: 80%;
     letter-spacing: 0.1rem;
     line-height: 28px;
     color: rgb(48, 39, 66);
